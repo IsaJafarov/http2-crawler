@@ -10,6 +10,8 @@ Load a list of domains from a remote file
 '''
 def get_domain_list():
     data = urllib.request.urlopen(
+        # enter a remote file that contains a list of domains (participating in bounty programs)
+        # the following one is just an example
         'https://raw.githubusercontent.com/arkadiyt/bounty-targets-data/main/data/domains.txt')
 
     domains = []
